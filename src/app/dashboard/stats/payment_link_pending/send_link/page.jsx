@@ -34,14 +34,14 @@
 
 "use client";
 import React, { useState } from 'react';
-import styles from "@/app/ui/dashboard/stats/sendlink/sendlink.module.css"; // Import CSS file for styling
+import styles from "@/ui/stats/sendlink/sendlink.module.css"; // Import CSS file for styling
 
 const SendLink = () => {
     
   
     return (
       <div >
-        
+         hello
       </div>
     );
   };
