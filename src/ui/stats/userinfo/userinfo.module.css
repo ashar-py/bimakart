@@ -1,0 +1,88 @@
+/* userinfo.module.css */
+
+.container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.container p{
+  margin: 10px;
+}
+
+.title {
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.userInfoContainer {
+  margin-bottom: 20px;
+}
+
+.tile {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.tile span {
+  font-weight: bold;
+  color: #555;
+}
+
+.content {
+  margin-top: 12px;
+}
+
+.toggleButton {
+  background-color: var(--bg);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color:var(--bgSoft);
+}
+
+.chatHistory {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.chatHistory h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.chatHistory p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.chatMessage {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.userMessage {
+  text-align: right;
+}
+
+.assistantMessage {
+  text-align: left;
+}

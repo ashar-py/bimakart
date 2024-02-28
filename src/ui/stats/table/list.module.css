@@ -1,0 +1,74 @@
+.title{
+  display: block;
+  text-align: center;
+  margin: 30px;
+}
+
+.mainTable {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 10px;
+  
+}
+
+.mainTable th,
+.mainTable td {
+  border-bottom: 0.7px solid #f2f2f2;
+  padding: 5px; /* Increased padding for better readability */
+  text-align: left;
+}
+
+.mainTable th {
+  background-color: var(--bg);
+  color: var(--text);
+  width: auto;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-right: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 90%; /* Limiting the maximum width of the popup */
+  max-height: 80%; /* Limiting the maximum height of the popup */
+  overflow-y: auto; /* Adding scroll for overflow content */
+  z-index: 1000; /* Ensure it's above the overlay */
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--bg);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--bgSoft); 
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .mainTable th,
+  .mainTable td {
+    padding: 10px; /* Decreased padding for smaller screens */
+  }
+}

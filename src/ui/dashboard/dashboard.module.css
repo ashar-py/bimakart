@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    height: 100vh; 
+    background-color: var(--light);
+}
+
+.menu{
+    
+        
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    height:100vh;
+    overflow-y:auto;
+    
+}
+
+.content{
+    max-width: auto;
+    flex:4;
+    margin-left: 1px;
+}
+
+/* .wrapper{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.side{
+    flex:1;
+} */
