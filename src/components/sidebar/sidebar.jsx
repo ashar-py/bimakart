@@ -37,10 +37,10 @@ const Sidebar = ({ user }) => {
             </Link>
           </li>
           <li>
-            <Link href="/dashboard/stats" passHref>
+            <Link href="/dashboard/livechat" passHref>
               <div className={styles.menuItem}>
                 <RiSettingsLine />
-                <span>Stats</span>
+                <span>Live Chat</span>
               </div>
             </Link>
           </li>
