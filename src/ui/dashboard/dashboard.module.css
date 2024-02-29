@@ -16,9 +16,9 @@
 }
 
 .content{
+    height: 100vh;
     max-width: auto;
     flex:4;
-    margin-left: 1px;
 }
 
 /* .wrapper{

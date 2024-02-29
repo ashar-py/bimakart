@@ -13,7 +13,7 @@
 
 .mainTable th,
 .mainTable td {
-  border-bottom: 0.7px solid #f2f2f2;
+  border-bottom: 0.7px solid #debdff;;
   padding: 5px; /* Increased padding for better readability */
   text-align: left;
 }

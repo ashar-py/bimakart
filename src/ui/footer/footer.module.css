@@ -1,17 +1,14 @@
 .footer {
-  width: 70%;
+  width: 100%;
   background-color: transparent; 
   color: #333; 
   text-align: center;
-  padding: 2px 0px; 
-  position:relative; 
-  left: 190px;
-  
+  position:relative;
+  left: 0;
   bottom: 0;
-  
   font-weight: 800;
-  font-size:15px ;
-  
+  font-size:15px;
+  padding: 10px;
 }
 
 
