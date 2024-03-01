@@ -29,12 +29,17 @@ import Footer from "@/components/footer/footer";
 
 const Layout = ({ children }) => {
   return (
+    <div>
     <div className={styles.container}>
+      <div className={styles.menu}>
       <Sidebar />
+      </div>
       <div className={styles.content}>
         {children}
-        <Footer />
+        
       </div>
+    </div>
+    <Footer />
     </div>
   );
 };

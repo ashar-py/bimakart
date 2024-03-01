@@ -1,13 +1,15 @@
 .container {
+  padding-top: 10px;
   /* display: flex; */
   /* flex-wrap: wrap; */
   width: 100%;
 }
 
-.thirdparty, .comprehensive, .notIntrested{
+.thirdparty, .other{
   display: flex;
   padding: 15px;
   align-items: flex-end;
+  margin-bottom: 15px;
 
 }
 

@@ -5,7 +5,7 @@
 }
 
 .mainTable {
-  width: 95%;
+  width: 97%;
   border-collapse: collapse;
   margin: 10px;
   
@@ -13,9 +13,9 @@
 
 .mainTable th,
 .mainTable td {
-  border-bottom: 0.7px solid #debdff;;
+  border-bottom: 0.7px solid var(--light);
   padding: 5px; /* Increased padding for better readability */
-  text-align: left;
+  text-align: center;
 }
 
 .mainTable th {
@@ -59,10 +59,22 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 15px;
 }
 
 .button:hover {
   background-color: var(--bgSoft); 
+}
+
+
+.send input{
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.2px solid black;
+}
+
+.toggle{
+  display: inline;
 }
 
 /* Media query for responsiveness */

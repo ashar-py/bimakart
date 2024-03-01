@@ -1,25 +1,20 @@
-.container{
+/* .container{
     display: flex;
-    height: 100vh; 
+    height: 100%;
     background-color: var(--light);
 }
 
 .menu{
-    
-        
     align-items: center;
     justify-content: center;
     position:relative;
-    height:100vh;
+    min-height:100vh;
     overflow-y:auto;
-    
 }
 
 .content{
     height: 100vh;
-    max-width: auto;
-    flex:4;
-}
+} */
 
 /* .wrapper{
     display: flex;
@@ -46,3 +41,19 @@
 .side{
     flex:1;
 } */
+
+.container {
+    display: flex;
+    background-color: #f2f2f2;
+  }
+  
+  .menu {
+    flex: 1;
+    background-color: var(--bg);
+    min-height: 96vh;
+  }
+  
+  .content {
+    flex: 8;
+    padding: 20px;
+  }

@@ -3,9 +3,13 @@ import React, { useState, useEffect } from "react";
 import { fetchActiveUsers } from "@/app/api/activeusers";
 import UserInfo from "@/components/stats/userinfo";
 import styles from "@/ui/stats/table/list.module.css";
+import Link from "next/link";
 
+const transfer =() => {
+  confirm("This action will send this user to the Completed section.\nDo you want to proceed?");
+};
 
-const PaymentDue = () => {
+const PaymentDueUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
   const [error, setError] = useState(null);
   const [selectedPhoneNo, setSelectedPhoneNo] = useState(null); 
@@ -28,6 +32,9 @@ const PaymentDue = () => {
 
   return (
     <div className={styles.container}>
+      <button className={styles.button}>
+        <Link href="/dashboard/">&lt;&nbsp; Go Back</Link>
+      </button>
       <h4 className={styles.title}>Payment Due Users</h4>
       {error ? (
         <p>Error: {error}</p>
@@ -38,7 +45,6 @@ const PaymentDue = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
-                <th>STATUS</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -48,21 +54,23 @@ const PaymentDue = () => {
                   if (
                     userData.name &&
                     userData.phone_no &&
-                    userData.status &&
                     userData.assistant_id
                   ) {
                     return (
                       <tr key={userData.assistant_id}>
                         <td>{userData.name}</td>
                         <td>{userData.phone_no}</td>
-                        <td>{userData.status}</td>
                         <td>
                           <button 
                             onClick={() => setSelectedPhoneNo(userData.phone_no)}
                             className={`${styles.button} ${styles.view}`}
                           >
-                            View
+                            Details
                           </button>
+                          <button className={styles.button}>
+                            <Link href="/dashboard/livechat/">View Chat</Link>
+                          </button>
+                          <button onClick={transfer} className={styles.button}>Payment Recieved</button>
                         </td>
                       </tr>
                     );
@@ -89,4 +97,4 @@ const PaymentDue = () => {
   );
 };
 
-export default PaymentDue;
+export default PaymentDueUsers;

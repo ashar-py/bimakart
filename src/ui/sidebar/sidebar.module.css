@@ -1,6 +1,4 @@
 .sidebar {
-  width: 200px;
-  height: 100vh;
   background-color: var(--bg);
   color: white;  
   transition: all 0.3s ease;
@@ -32,6 +30,7 @@
 }
 
 .menu {
+  width: 100%;
   padding: 50px;
   font-size: large;
 }

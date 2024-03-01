@@ -31,15 +31,11 @@ const Dashboard = () => {
       </div>
       </div>
 
-      <span>Comprehensive Users</span>
-      <div className={styles.comprehensive}>     
+      <span>Other Users</span>
+      <div className={styles.other}>     
       <div className={styles.tile}>
         <Link href="./stats/comprehensive">Comprehensive</Link>
       </div>
-      </div>
-
-      <span>Not Intrested Users</span>
-      <div className={styles.notIntrested}>
       <div className={styles.tile}>
         <Link href="./stats/not_interested">Not Interested</Link>
       </div>
