@@ -42,6 +42,7 @@ const DocumentsPendingUsers = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
+                <th>CHAT SUMMARY</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -58,12 +59,14 @@ const DocumentsPendingUsers = () => {
                         <td>{userData.name}</td>
                         <td>{userData.phone_no}</td>
                         <td>
-                          <button 
+                        <button 
                             onClick={() => setSelectedPhoneNo(userData.phone_no)}
                             className={`${styles.button} ${styles.view}`}
                           >
                             Details
                           </button>
+                        </td>
+                        <td>
                           <button className={styles.button}>
                             <Link href="/dashboard/livechat/">View Chat</Link>
                           </button>

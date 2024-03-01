@@ -32,7 +32,7 @@ const Not_interested = () => {
       <button className={styles.button}>
         <Link href="/dashboard/">&lt;&nbsp; Go Back</Link>
       </button>
-      <h4 className={styles.title}>Not Interasted Users</h4>
+      <h4 className={styles.title}>Not Interested Users</h4>
       {error ? (
         <p>Error: {error}</p>
       ) : (
@@ -42,6 +42,7 @@ const Not_interested = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
+                <th>CHAT SUMMARY</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -64,6 +65,8 @@ const Not_interested = () => {
                           >
                             Details
                           </button>
+                          </td>
+                          <td>
                           <button className={styles.button}>
                             <Link href="/dashboard/livechat/">View Chat</Link>
                           </button>

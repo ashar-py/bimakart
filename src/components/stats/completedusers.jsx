@@ -42,6 +42,7 @@ const CompletedUsers = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
+                <th>CHAT SUMMARY</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -64,6 +65,8 @@ const CompletedUsers = () => {
                           >
                             Details
                           </button>
+                          </td>
+                          <td>
                           <button className={styles.button}>
                             <Link href="/dashboard/livechat/">View Chat</Link>
                           </button>

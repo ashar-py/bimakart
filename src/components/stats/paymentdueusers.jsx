@@ -45,6 +45,7 @@ const PaymentDueUsers = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
+                <th>CHAT SUMMARY</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -67,6 +68,8 @@ const PaymentDueUsers = () => {
                           >
                             Details
                           </button>
+                          </td>
+                          <td className={styles.action}>
                           <button className={styles.button}>
                             <Link href="/dashboard/livechat/">View Chat</Link>
                           </button>

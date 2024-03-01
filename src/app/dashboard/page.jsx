@@ -34,10 +34,10 @@ const Dashboard = () => {
       <span>Other Users</span>
       <div className={styles.other}>     
       <div className={styles.tile}>
-        <Link href="./stats/comprehensive">Comprehensive</Link>
+        <Link href="./dashboard/stats/comprehensive">Comprehensive</Link>
       </div>
       <div className={styles.tile}>
-        <Link href="./stats/not_interested">Not Interested</Link>
+        <Link href="./dashboard/stats/not_interested">Not Interested</Link>
       </div>
       </div>
     </div>

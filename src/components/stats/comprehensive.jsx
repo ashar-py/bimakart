@@ -6,7 +6,7 @@ import styles from "@/ui/stats/table/list.module.css";
 import Link from "next/link";
 
 
-const Comprehensive = () => {
+const ComprehensiveUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
   const [error, setError] = useState(null);
   const [selectedPhoneNo, setSelectedPhoneNo] = useState(null); 
@@ -42,6 +42,7 @@ const Comprehensive = () => {
               <tr>
                 <th>NAME</th>
                 <th>PHONE NUMBER</th>
+                <th>CHAT SUMMARY</th>
                 <th>ACTION</th>
               </tr>
             </thead>
@@ -64,6 +65,8 @@ const Comprehensive = () => {
                           >
                             Details
                           </button>
+                          </td>
+                          <td>
                           <button className={styles.button}>
                             <Link href="/dashboard/livechat/">View Chat</Link>
                           </button>
@@ -93,4 +96,4 @@ const Comprehensive = () => {
   );
 };
 
-export default Comprehensive;
+export default ComprehensiveUsers;
