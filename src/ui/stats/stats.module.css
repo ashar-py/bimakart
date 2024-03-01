@@ -7,7 +7,7 @@
 .thirdparty, .comprehensive, .notIntrested{
   display: flex;
   padding: 15px;
-  align-items: center;
+  align-items: flex-end;
 
 }
 
@@ -28,10 +28,10 @@
   height: 150px; /* Set a fixed height for square tiles */
   padding: 20px;
   margin: auto;
-  background-color: var(--bg);
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s ease;
   /* display: flex; */
   align-items: center;
@@ -40,7 +40,7 @@
 }
 
 .tile:hover {
-  background-color: var(--bgSoft);
+  background-color: rgb(187, 184, 184);
   cursor: pointer;
 }
 
