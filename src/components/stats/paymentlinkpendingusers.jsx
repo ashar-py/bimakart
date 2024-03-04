@@ -68,9 +68,17 @@ const PaymentLinkPendingUsers = () => {
                           </button>
                           </td>
                           <td className={styles.action}>
-                          <button className={styles.button}>
-                            <Link href="/dashboard/livechat/">View Chat</Link>
-                          </button>
+                          <Link
+                            href={{
+                              pathname: "/dashboard/livechat",
+                              query: {
+                                phoneNumber: userData.phone_no,
+                              },
+                            }}
+                            className={styles.button}
+                          >
+                            View Chat
+                          </Link>
                           <ToggleDiv/>
                           {/* <input className={styles.input} placeholder="Enter link here.."/>
                           <button className={styles.button}>Send</button> */}

@@ -70,9 +70,17 @@ const PaymentDueUsers = () => {
                           </button>
                           </td>
                           <td className={styles.action}>
-                          <button className={styles.button}>
-                            <Link href="/dashboard/livechat/">View Chat</Link>
-                          </button>
+                          <Link
+                            href={{
+                              pathname: "/dashboard/livechat",
+                              query: {
+                                phoneNumber: userData.phone_no,
+                              },
+                            }}
+                            className={styles.button}
+                          >
+                            View Chat
+                          </Link>
                           <button onClick={transfer} className={styles.button}>Payment Recieved</button>
                         </td>
                       </tr>

@@ -66,10 +66,18 @@ const CompletedUsers = () => {
                             Details
                           </button>
                           </td>
-                          <td>
-                          <button className={styles.button}>
-                            <Link href="/dashboard/livechat/">View Chat</Link>
-                          </button>
+                          <td className={styles.action}>
+                          <Link
+                            href={{
+                              pathname: "/dashboard/livechat",
+                              query: {
+                                phoneNumber: userData.phone_no,
+                              },
+                            }}
+                            className={`${styles.button} ${styles.viewChat}`}
+                          >
+                            View Chat
+                          </Link>
                         </td>
                       </tr>
                     );
