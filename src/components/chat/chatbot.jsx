@@ -278,22 +278,22 @@ const Chatbot = () => {
     }
   };
 
-  // const retrieveChat = async () => {
-  //   try {
-  //     const chatHistory = await retrieveChatHistory(phoneNumber, dropdownValue);
+  const retrieveChat = async () => {
+    try {
+      const chatHistory = await retrieveChatHistory(phoneNumber, dropdownValue);
 
-  //     const messagesArray = Array.isArray(chatHistory.data)
-  //       ? chatHistory.data
-  //       : chatHistory.data?.messages || [];
+      const messagesArray = Array.isArray(chatHistory.data)
+        ? chatHistory.data
+        : chatHistory.data?.messages || [];
 
-  //     setMessages((prevMessages) => [
-  //       ...prevMessages,
-  //       ...messagesArray.map(({ role, content }) => ({ role, content })).reverse(),
-  //     ]);
-  //   } catch (error) {
-  //     console.error('Error retrieving chat history:', error);
-  //   }
-  // };
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        ...messagesArray.map(({ role, content }) => ({ role, content })).reverse(),
+      ]);
+    } catch (error) {
+      console.error('Error retrieving chat history:', error);
+    }
+  };
 
   const handlePhoneNumberChange = (event) => {
     setUserPhoneNumber(event.target.value);
